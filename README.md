@@ -14,7 +14,6 @@ If you wish to change the specimen that is processed, you can make use of the `e
 
 This script will download the respective `Gff3` and `Fasta` file and store them in the `input` directory. You can pass a different sequence or file path into this script.
 
-
 |Parameter|Description|Default|
 |---|---|---|
 |SEQUENCE_ID|The sequence identifier of the specimen you wish to download|ENSG00000139618|
@@ -23,6 +22,10 @@ This script will download the respective `Gff3` and `Fasta` file and store them 
 |GFF3_OUTPUT|The relative path of the Gff3 file|inputs/input.gff3|
 |FASTA_OUTPUT|The relative path of the Fasta file|inputs/input.fa|
 
+### File Conversions
+You may notice two additional files, `rna.nsv.txt` & `rna.tsv.txt`. These are here to demonstrate the methods of converting files and working with `gz` compression.
+
+You can see and use the static methods available in the `File` class.
 
 ## Drosophila Sechellia
 The specimen used by default is the Drosophila Sechellia, a fruit fly, as it is a small<sub>-ish</sub> file to process and therefore not to heavy on Github to store.
